@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Tasty Food</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center text-success"><span class="text-danger">Explore Your </span>Tasty Meals</h1>
+        <div class="text-center">
+            The Secret Ingredient is always Love!
+        </div>
+        <div class="text-center"><i>- Michael Sorrentino</i></div>
+        <div class="d-flex mx-auto mt-3" style="width: 50%">
+            <input class="form-control me-2 rounded-pill" type="text" placeholder="Enter Main Ingredient" id="search-input" />
+            <button class="btn btn-warning text-white" type="submit" id="search-btn">
+                Search
+            </button>
+        </div>
+
+        <!-- result -->
+        <h1 class="text-center my-4" style="color: rgb(224, 103, 188)">Your Search Results:</h1>
+        <div class="d-flex flex-wrap justify-content-between" id="meal-list">
+            
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="recipe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-warning p-3">
+                    <div class="d-flex justify-content-end">
+                        <i type="button" id="close" class="fa-solid fa-circle-xmark fs-4 text-white" data-bs-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <div class="modal-body" id="detailContent">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script src="js/fontawesome.js" crossorigin="anonymous"></script>
+    <!-- custom -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
